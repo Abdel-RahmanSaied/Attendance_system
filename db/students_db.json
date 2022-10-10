@@ -1,0 +1,39 @@
+{
+    "42018116": {
+        "subjects": [
+            "math",
+            "physics",
+            "software",
+            "english"
+        ],
+        "units": 120
+    },
+    "42020057": {
+        "subjects": [
+            "math",
+            "physics"
+        ],
+        "units": 90
+    },
+    "42020067": {
+        "subjects": [
+            "software",
+            "english"
+        ],
+        "units": 92
+    },
+    "42020068": {
+        "subjects": [
+            "physics",
+            "math"
+        ],
+        "units": 92
+    },
+    "4202006": {
+        "subjects": [
+            "software",
+            "math"
+        ],
+        "units": 113
+    }
+}
