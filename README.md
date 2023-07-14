@@ -3,12 +3,6 @@
 
 ### Light python script can make :
 
-- Download playlist from youtube by  link
-- Download separate video in which format 
-    - MP3
-    - MP4
-- Search about any topic by keyword 
-
 
 ### **Python Version** 
 - Python 3.8.10
