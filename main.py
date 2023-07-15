@@ -22,10 +22,10 @@ students_attendance = {}
 
 session_inprogress = True
 
-while session_inprogress :
+while session_inprogress:
     time = datetime.datetime.now().time()
     student_id = str(input("enter student id : "))
-    if student_id == "end" :
+    if student_id == "end":
         file_name = subject_name + " " + period_name + " " + subject_doctorName + ".csv"
         with open(file_name, "w") as csv_file:
             wr = csv.DictWriter(csv_file, fieldnames=["Student Name", "Enter Time"])
@@ -36,21 +36,19 @@ while session_inprogress :
                 wr.writerow({"Student Name": studentID, "Enter Time": entering_time})
             session_inprogress = False
 
-    elif student_id == "add" :
-        student_ID =  str(input("enter student id to register : "))
+    elif student_id == "add":
+        student_ID = str(input("enter student id to register : "))
         subjects_count = int(input("enter count of subjects  : "))
         subjects = []
-        for i in range(subjects_count) :
-            subject =  input(f"please enter  subject {i} : ")
+        for i in range(subjects_count):
+            subject = input(f"please enter  subject {i+1} : ")
             subjects.append(subject)
-        units =  int(input("enter the units : "))
-        print(STUDENTS().addStudent(student_ID,subjects, units))
-        print("*"*50)
+        units = int(input("enter the units : "))
+        print(STUDENTS().addStudent(student_ID, subjects, units))
+        print("*" * 50)
 
     else:
         students_attendance[student_id] = time
 
 
-
-
-
+print("session ended")
